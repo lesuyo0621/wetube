@@ -14,6 +14,7 @@ const app = express();
 
 app.use(helmet());
 app.set("view engine", "pug");
+//app.set("views", path.join(__dirname, "views")); views를 경로 바꾸기 위한 셋
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
